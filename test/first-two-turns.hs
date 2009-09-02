@@ -1,5 +1,5 @@
 -- These comments outline two basic turns. Implementing this will be the first
--- milestone for the project. The first time a 'function' is used here it's steps are defined, subsequent
+-- milestone for the project. The first time a 'function' is used here its steps are defined, subsequent
 -- times it's just stated.
 --
 --
