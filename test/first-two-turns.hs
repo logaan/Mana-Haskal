@@ -1,0 +1,35 @@
+-- These comments outline two basic turns. Implementing this will be the first
+-- milestone for the project. The first time a 'function' is used here it's steps are defined, subsequent
+-- times it's just stated.
+--
+--
+-- create the available cards
+-- colin = create new player
+--  create deck
+--    populate deck with 60 cards from available cards
+--  set name
+--  set life
+-- lyndon = create new player
+-- test game = new game with colin and lyndon
+--  shuffle libraries
+--  ask random player to choose play or draw
+--  start turn with active player
+--    notify both players who's turn it is
+--    manually draw 7 cards for each player
+--      notify the player drawing a card which they've got
+--      notify non-drawing player that their opponent drew a card
+--    manually tell active player to play a card
+--      notify other player what they played
+--    manually tell active player to play a card
+--  start turn with other player
+--    manually draw a card for the active player
+--      in the same way
+--    manually tell active player to play a card
+--    manually tell active player to play a card
+--    manually tell non-active player to play a card
+--    manually tell active player to tap one of the cards they played
+--      notify other player that the card has been tapped
+--    manually tell non-active player to move their played card to the graveyard
+--      notify other player that the card was moved to grave
+--  turns ends
+-- game ends
