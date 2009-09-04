@@ -1,34 +1,51 @@
 module ManaHaskal.Data
 where
 
+import Data.List(delete)
+
+-- Card
+--
 data Card = Card {
   cardName::String,
   cardType::String,
   cardCost::Maybe String,
   cardPT::Maybe String,
   cardText::String
+} deriving (Show, Eq)
+
+-- Zone
+--
+data Zone = Zone {
+  zoneCards::[Card]
 } deriving Show
 
-class Zone a
+deleteCard :: Zone -> Card -> Zone
+deleteCard (Zone cards) card = Zone (delete card cards)
 
-data Library = Library [Card]
-instance Zone Library
+addCard :: Zone -> Card -> Zone
+addCard (Zone cards) card = Zone (card:cards)
 
-data Hand = Hand [Card]
-instance Zone Hand
+move :: Card -> Zone -> Zone -> (Zone, Zone)
+move card from to = (deleteCard from card, addCard to card)
 
-data Battlefield = Battlefield [Card]
-instance Zone Battlefield
+-- Board
+--
+data Board = Board {
+  boardLibrary      :: Zone,
+  boardHand         :: Zone,
+  boardBattlefield  :: Zone,
+  boardGraveyard    :: Zone,
+  boardStack        :: Zone,
+  boardExile        :: Zone
+} deriving Show
 
-data Graveyard = Graveyard [Card]
-instance Zone Graveyard
-
-data TheStack = TheStack [Card]
-instance Zone TheStack
-
-data Exile = Exile [Card]
-instance Zone Exile
-
+-- Player
+--
 type Name = String
 type Life = Integer
-data Player = Player Name Life
+data Player = Player {
+  playerName::Name,
+  playerLife::Life,
+  playerBoard::Board
+} deriving Show
+
