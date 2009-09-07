@@ -1,0 +1,53 @@
+AErathi Berserker
+2RRR
+Creature -- Human Berserker
+2/4
+Rampage 3 (Whenever this creature becomes blocked, it gets +3/+3 until end of turn for each creature blocking it beyond the first.)
+
+AEther Barrier
+2U
+Enchantment
+Whenever a player casts a creature spell, that player sacrifices a permanent unless he or she pays {1}.
+
+AEther Burst
+1U
+Instant
+Return up to X target creatures to their owners' hands, where X is one plus the number of cards named AEther Burst in all graveyards as you cast AEther Burst.
+
+AEther Charge
+4R
+Enchantment
+Whenever a Beast enters the battlefield under your control, you may have it deal 4 damage to target opponent.
+
+AEther Flash
+2RR
+Enchantment
+Whenever a creature enters the battlefield, AEther Flash deals 2 damage to it.
+
+AEther Membrane
+1RR
+Creature -- Wall
+0/5
+Defender; reach (This creature can block creatures with flying.)
+Whenever AEther Membrane blocks a creature, return that creature to its owner's hand at end of combat.
+
+AEther Mutation
+3GU
+Sorcery
+Return target creature to its owner's hand. Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that creature's converted mana cost.
+
+AEther Rift
+1RG
+Enchantment
+At the beginning of your upkeep, discard a card at random from your hand. If you discard a creature card this way, return it from your graveyard to the battlefield unless any player pays 5 life.
+
+AEther Shockwave
+3W
+Instant
+Choose one -- Tap all Spirits; or tap all non-Spirit creatures.
+
+AEther Snap
+3BB
+Sorcery
+Remove all counters from all permanents and exile all tokens.
+
